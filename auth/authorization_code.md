@@ -16,7 +16,7 @@ https://www.tistory.com/oauth/authorize?
 
 매개변수는 다음과 같습니다.
 
-- *client_id*: 클라이언트 정보의 Client ID 입니다.
+- client_id: 클라이언트 정보의 Client ID 입니다.
 - redirect_url: 사용자가 인증 후에 리디렉션할 URL입니다. 클라이언트 정보의 Callback 경로로 등록하여야 하며 등록되지 않은 URL을 사용하는 경우 인증이 거부됩니다.
 - response_type: Implicit 방식과 구분하기 위해 사용하며 항상 `code`를 사용합니다.
 - state:  [사이트간 요청 위조](https://en.wikipedia.org/wiki/Cross-site_request_forgery) 공격을 보호하기 위한 임의의 고유한 문자열이며 리디렉션시 해당 값이 전달됩니다. (필수아님)
@@ -87,8 +87,8 @@ https://www.tistory.com/oauth/access_token?
 
 매개변수는 다음과 같습니다.
 
-- *client_id*: 클라이언트 정보의 Client ID 입니다.
-- *client_secret*: 클라이언트 정보의 Secret Key 입니다. 이 정보는 티스토리와 Client만이 공유해야하며 절대 외부에 공개되면 안됩니다.
+- client_id: 클라이언트 정보의 Client ID 입니다.
+- client_secret: 클라이언트 정보의 Secret Key 입니다. 이 정보는 티스토리와 Client만이 공유해야하며 절대 외부에 공개되면 안됩니다.
 - redirect_url: 인증요청시 사용한 리디렉션 URL로 요청검증을 위해 사용합니다.
 - code: 리디렉션으로 전달받은 code를 그대로 사용합니다.
 - grant_type: Implicit 방식과 구분하기 위해 사용하며 항상 `authorization_code`를 사용합니다.

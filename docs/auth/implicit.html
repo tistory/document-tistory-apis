@@ -201,6 +201,28 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="implicit-&#xBC29;&#xC2DD;">Implicit &#xBC29;&#xC2DD;</h1>
+<p>Client-side &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D;&#xC73C;&#xB85C; &#xC778;&#xC99D;&#xC744; &#xAD6C;&#xD604;&#xD560; &#xACBD;&#xC6B0; &#xC0AC;&#xC6A9;&#xD558;&#xAE30; &#xC801;&#xD569;&#xD55C; &#xC778;&#xC99D; &#xBC29;&#xC2DD;&#xC785;&#xB2C8;&#xB2E4;. Javascript &#xB4F1;&#xC744; &#xC774;&#xC6A9;&#xD574; &#xD074;&#xB77C;&#xC774;&#xC5B8;&#xD2B8; &#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xB4F1;&#xC5D0;&#xC11C;&#xB9CC; &#xBAA8;&#xB4E0; &#xCC98;&#xB9AC;&#xAC00; &#xC774;&#xB8E8;&#xC5B4;&#xC9C0;&#xB294; &#xC694;&#xCCAD;&#xC5D0; &#xD65C;&#xC6A9;&#xD560;&#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h2 id="&#xC778;&#xC99D;-&#xC694;&#xCCAD;-&#xBC0F;-authentication-code-&#xBC1C;&#xAE09;">&#xC778;&#xC99D; &#xC694;&#xCCAD; &#xBC0F; Authentication code &#xBC1C;&#xAE09;</h2>
+<p>&#xC0AC;&#xC6A9;&#xC790;&#xC758; &#xD2F0;&#xC2A4;&#xD1A0;&#xB9AC;&#xC758; &#xB370;&#xC774;&#xD130; &#xC811;&#xADFC;&#xC744; &#xC704;&#xD574;&#xC11C; &#xC0AC;&#xC6A9;&#xC790;&#xC5D0;&#xAC8C; &#xD2F0;&#xC2A4;&#xD1A0;&#xB9AC; &#xC778;&#xC99D;&#xC694;&#xCCAD;&#xC744; &#xD569;&#xB2C8;&#xB2E4;. &#xC544;&#xB798;&#xC758; URL&#xB85C; &#xC0AC;&#xC6A9;&#xC790;&#xAC00; &#xC811;&#xADFC;&#xD558;&#xB3C4;&#xB85D; &#xD558;&#xBA74; &#xC778;&#xC99D;&#xC808;&#xCC28;&#xAC00; &#xC9C4;&#xD589;&#xB418;&#xBA70; &#xC0AC;&#xC6A9;&#xC790;&#xAC00; &#xD2F0;&#xC2A4;&#xD1A0;&#xB9AC;&#xC5D0; &#xB85C;&#xADF8;&#xC778;&#xD558;&#xC9C0; &#xC54A;&#xC740; &#xACBD;&#xC6B0; &#xB85C;&#xADF8;&#xC778; &#xD6C4;&#xC5D0; &#xC778;&#xC99D; &#xC808;&#xCC28;&#xAC00; &#xC9C4;&#xD589;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code>https://www.tistory.com/oauth/authorize?
+  client_id={client-id}
+  &amp;redirect_url={redirect-url}
+  &amp;response_type=token
+</code></pre><p>&#xB9E4;&#xAC1C;&#xBCC0;&#xC218;&#xB294; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<ul>
+<li>client_id: &#xD074;&#xB77C;&#xC774;&#xC5B8;&#xD2B8; &#xC815;&#xBCF4;&#xC758; Client ID &#xC785;&#xB2C8;&#xB2E4;.</li>
+<li>redirect_url: &#xC0AC;&#xC6A9;&#xC790;&#xAC00; &#xC778;&#xC99D; &#xD6C4;&#xC5D0; &#xB9AC;&#xB514;&#xB809;&#xC158;&#xD560; URL&#xC785;&#xB2C8;&#xB2E4;. &#xD074;&#xB77C;&#xC774;&#xC5B8;&#xD2B8; &#xC815;&#xBCF4;&#xC758; Callback &#xACBD;&#xB85C;&#xB85C; &#xB4F1;&#xB85D;&#xD558;&#xC5EC;&#xC57C; &#xD558;&#xBA70; &#xB4F1;&#xB85D;&#xB418;&#xC9C0; &#xC54A;&#xC740; URL&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xACBD;&#xC6B0; &#xC778;&#xC99D;&#xC774; &#xAC70;&#xBD80;&#xB429;&#xB2C8;&#xB2E4;.</li>
+<li>response_type: Authorization code &#xBC29;&#xC2DD;&#xACFC; &#xAD6C;&#xBD84;&#xD558;&#xAE30; &#xC704;&#xD574; &#xC0AC;&#xC6A9;&#xD558;&#xBA70; &#xD56D;&#xC0C1; <code>token</code>&#xB97C; &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;.</li>
+</ul>
+<h3 id="&#xC608;">&#xC608;</h3>
+<p>&#xC778;&#xC99D;&#xC694;&#xCCAD; URL&#xC774; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC740; &#xACBD;&#xC6B0;</p>
+<pre><code>https://www.tistory.com/oauth/authorize?
+  client_id=abcdefghijklmnopqrstuvwxyz
+  &amp;redirect_uri=http://client.redirect.url
+  &amp;response_type=token
+</code></pre><p>&#xC778;&#xC99D; &#xC644;&#xB8CC;&#xD6C4; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; &#xB9AC;&#xB514;&#xB809;&#xC158;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code>http://client.redirect.url#accesss_token={access-token}&amp;expires_in=3600
+</code></pre><h2 id="&#xB9AC;&#xB514;&#xB809;&#xC158;-&#xCC98;&#xB9AC;-&#xBC0F;-access-token-&#xBC1C;&#xAE09;">&#xB9AC;&#xB514;&#xB809;&#xC158; &#xCC98;&#xB9AC; &#xBC0F; Access Token &#xBC1C;&#xAE09;</h2>
 
                                 
                                 </section>
@@ -240,7 +262,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Implicit 방식","level":"2.3","depth":1,"previous":{"title":"Authorization Code 방식","level":"2.2","depth":1,"path":"auth/authorization_code.md","ref":"auth/authorization_code.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":10,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"auth/implicit.md","mtime":"2018-08-01T15:32:05.039Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-01T15:53:22.774Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Implicit 방식","level":"2.3","depth":1,"previous":{"title":"Authorization Code 방식","level":"2.2","depth":1,"path":"auth/authorization_code.md","ref":"auth/authorization_code.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":10,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"auth/implicit.md","mtime":"2018-08-02T01:59:21.040Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-02T03:14:23.624Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
