@@ -101,6 +101,11 @@ https://www.tistory.com/oauth/access_token?
 
 ### 오류
 
-오류가 발생한 경우 HTTP status로 오류응답이 옵니다. 오류에 대한 HTTP status는 다음과 같습니다.
+오류가 발생한 경우 HTTP 오류 응답과 함께 오류 메시지가 응답값으로 옵니다. 응답값은 다음과 같습니다.
 
-- TODO
+```
+error={error}&error_description={error-description}
+```
+
+- error: 에러코드입니다.
+- error_description: 에러에 대한 설명입니다.
