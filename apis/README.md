@@ -34,9 +34,11 @@ https://www.tistory.com/apis/post/list?
 JSON 응답
 ```json
 {
-	status: [결과 CODE],
-	item: [DATA],
-	error_message: [오류 발생시에만 사용]
+  "tistory": {
+    "status": "[결과 CODE]",
+    "item": "[DATA]",
+    "error_message": "[오류 발생시에만 사용]"
+  }
 }
 ```
 

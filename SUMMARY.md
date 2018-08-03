@@ -10,4 +10,5 @@
 
 ### API 가이드
 - [소개](apis/README.md)
-- [블로그 정보](apis/blog.md)
+- v1
+  - [블로그 정보](apis/v1/blog.md)

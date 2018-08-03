@@ -13,6 +13,25 @@ https://www.tistory.com/apis/blog/info?
 
 - name: 조회하고자 하는 blog name입니다. 티스토리 주소중 `.tistory.com`을 제외한 부분이 blog name입니다. `notice.tistory.com` 에서는 `notice` 입니다.
 
+## 응답값
+
+- url: 티스토리 기본 url
+- secondaryUrl: 독립도메인 url
+- title: 블로그 타이틀
+- description: 블로그 설명
+- default: 대표블로그 여부 (Y/N)
+- blogIconUrl: 블로그 아이콘 URL
+- faviconUrl: 파비콘 URL
+- profileThumbnailImageUrl: 대표이미지 썸네일 URL
+- profileImageUrl: 대표이미지 URL
+- blogId: 블로그 아이디
+- statistics: 블로그 컨텐츠 개수
+    - post: 글 수
+    - comment: 댓글 수
+    - trackback: 트랙백 수
+    - guestbook: 방명록 수
+    - invitation: 초대장 수
+
 ## 응답값 예
 
 ### XML

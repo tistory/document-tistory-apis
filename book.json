@@ -2,5 +2,6 @@
   "root": ".",
   "pdf": {
     "fontSize": 10
-  }
+  },
+  "plugins": ["folding-chapters"]
 }
