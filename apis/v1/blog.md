@@ -3,7 +3,7 @@
 자신의 블로그 정보를 가져오는 API 입니다.
 
 ```
-https://www.tistory.com/apis/blog/info?
+GET https://www.tistory.com/apis/blog/info?
   access_token={access-token}
   &output={output-type}
 ```

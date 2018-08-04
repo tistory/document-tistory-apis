@@ -12,3 +12,5 @@
 - [소개](apis/README.md)
 - v1
   - [블로그 정보](apis/v1/blog.md)
+  - 글
+    - [글 목록](apis/v1/post/list.md)
