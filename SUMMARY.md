@@ -14,3 +14,5 @@
   - [블로그 정보](apis/v1/blog.md)
   - 글
     - [글 목록](apis/v1/post/list.md)
+    - [글 일기](apis/v1/post/read.md)
+    - [첨부파일 업로드](apis/v1/post/attach.md)
