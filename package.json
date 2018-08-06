@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/tistory/document-tistory-apis#readme",
   "dependencies": {
-    "gitbook-cli": "^2.3.2"
+    "gitbook-cli": "^2.3.2",
+    "gitbook-plugin-folding-chapters": "0.0.9"
   }
 }
