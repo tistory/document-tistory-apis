@@ -15,3 +15,6 @@ _book
 *.epub
 *.mobi
 *.pdf
+
+docs/.*
+docs/package*.json

@@ -3,5 +3,7 @@
   "pdf": {
     "fontSize": 10
   },
-  "plugins": ["folding-chapters"]
+  "plugins": [
+    "theme-tistory"
+  ]
 }
