@@ -57,6 +57,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="../apis/" />
+    
     
     <link rel="prev" href="authorization_code.html" />
     
@@ -67,6 +69,9 @@
 <div class="book">
     <div class="book-summary">
         
+            <a href="https://www.tistory.com" class="book-logo-wrap">
+                <img src="/gitbook/images/tistory-logo.png" width="120" height="26" alt="TISTORY">
+            </a>
             
 <div id="book-search-input" role="search">
     <input type="text" placeholder="Type to search" />
@@ -155,6 +160,109 @@
         
         
     
+        <li class="chapter " data-level="3.1" data-path="../apis/">
+            
+                <a href="../apis/">
+            
+                    
+                    소개
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" >
+            
+                <span>
+            
+                    
+                    v1
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../apis/v1/blog.html">
+            
+                <a href="../apis/v1/blog.html">
+            
+                    
+                    블로그 정보
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" >
+            
+                <span>
+            
+                    
+                    글
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.2.1" data-path="../apis/v1/post/list.html">
+            
+                <a href="../apis/v1/post/list.html">
+            
+                    
+                    글 목록
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.2" data-path="../apis/v1/post/read.html">
+            
+                <a href="../apis/v1/post/read.html">
+            
+                    
+                    글 읽기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2.3" data-path="../apis/v1/post/attach.html">
+            
+                <a href="../apis/v1/post/attach.html">
+            
+                    
+                    첨부파일 업로드
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
     
 
@@ -223,6 +331,15 @@
 </code></pre><p>&#xC778;&#xC99D; &#xC644;&#xB8CC;&#xD6C4; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; &#xB9AC;&#xB514;&#xB809;&#xC158;&#xB429;&#xB2C8;&#xB2E4;.</p>
 <pre><code>http://client.redirect.url#accesss_token={access-token}&amp;expires_in=3600
 </code></pre><h2 id="&#xB9AC;&#xB514;&#xB809;&#xC158;-&#xCC98;&#xB9AC;-&#xBC0F;-access-token-&#xBC1C;&#xAE09;">&#xB9AC;&#xB514;&#xB809;&#xC158; &#xCC98;&#xB9AC; &#xBC0F; Access Token &#xBC1C;&#xAE09;</h2>
+<p>&#xC0AC;&#xC6A9;&#xC790;&#xAC00; &#xC778;&#xC99D;&#xC744; &#xC644;&#xB8CC;&#xD558;&#xBA74; &#xB2E4;&#xC74C;&#xC758; URL&#xB85C; &#xB9AC;&#xB514;&#xB809;&#xC158;&#xB429;&#xB2C8;&#xB2E4;.</p>
+<pre><code>http://{redirect-url}#
+  accesss_token={access-token}
+  &amp;expires_in=3600
+</code></pre><p>Implicit &#xBC29;&#xC2DD;&#xC740; &#xC778;&#xC99D; &#xC644;&#xB8CC; &#xD6C4; Access Token&#xC774; &#xC989;&#xC2DC; &#xBC1C;&#xAE09;&#xB429;&#xB2C8;&#xB2E4;. &#xB9E4;&#xAC1C;&#xBCC0;&#xC218;&#xC640; &#xAC19;&#xC740; &#xD615;&#xC2DD;&#xC73C;&#xB85C; &#xC544;&#xB798;&#xC640; &#xAC19;&#xC774; &#xD574;&#xC26C;&#xB85C; &#xC804;&#xB2EC;&#xB429;&#xB2C8;&#xB2E4;. &#xBE0C;&#xB77C;&#xC6B0;&#xC800;&#xB97C; &#xD1B5;&#xD574; Access Token&#xC774; &#xBC1C;&#xAE09;&#xB418;&#xBBC0;&#xB85C; &#xC678;&#xBD80;&#xC5D0; &#xB178;&#xCD9C;&#xB418;&#xC9C0; &#xC54A;&#xB3C4;&#xB85D; &#xC8FC;&#xC758;&#xAC00; &#xD544;&#xC694;&#xD569;&#xB2C8;&#xB2E4;.</p>
+<ul>
+<li>access_token: &#xBC1C;&#xAE09;&#xB41C; Access Token &#xC785;&#xB2C8;&#xB2E4;.</li>
+<li>expires_in: Access Token&#xC758; &#xC720;&#xD6A8;&#xC2DC;&#xAC04;&#xC73C;&#xB85C; &#xCD08;&#xB2E8;&#xC704;&#xC785;&#xB2C8;&#xB2E4;.</li>
+</ul>
 
                                 
                                 </section>
@@ -250,10 +367,14 @@
 
             
                 
-                <a href="authorization_code.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Authorization Code 방식">
+                <a href="authorization_code.html" class="navigation navigation-prev " aria-label="Previous page: Authorization Code 방식">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="../apis/" class="navigation navigation-next " aria-label="Next page: 소개">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -262,7 +383,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Implicit 방식","level":"2.3","depth":1,"previous":{"title":"Authorization Code 방식","level":"2.2","depth":1,"path":"auth/authorization_code.md","ref":"auth/authorization_code.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":10,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"auth/implicit.md","mtime":"2018-08-02T01:59:21.040Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-02T03:14:23.624Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Implicit 방식","level":"2.3","depth":1,"next":{"title":"소개","level":"3.1","depth":1,"path":"apis/README.md","ref":"apis/README.md","articles":[]},"previous":{"title":"Authorization Code 방식","level":"2.2","depth":1,"path":"auth/authorization_code.md","ref":"auth/authorization_code.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-tistory"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-tistory":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":10,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"auth/implicit.md","mtime":"2018-08-02T03:16:25.755Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-04T14:05:53.329Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
