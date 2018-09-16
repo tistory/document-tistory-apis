@@ -77,7 +77,7 @@ https://{redirect-url}?
 다음의 URL을 사용해 발급된 code를 Access Token과 교환합니다. 이때 Secret Key가 사용되므로 반드시 서버에서 수행해야합니다.
 
 ```
-https://www.tistory.com/oauth/access_token?
+GET https://www.tistory.com/oauth/access_token?
   client_id={client-id}
   &client_secret={client-secret}
   &redirect_url={redirect-url}

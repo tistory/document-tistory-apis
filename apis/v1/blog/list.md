@@ -34,46 +34,6 @@ GET https://www.tistory.com/apis/blog/info?
 
 ## 응답값 예
 
-### XML
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<tistory>
-  <status>200</status>
-  <item>
-    <id>blog_oauth_test@daum.net</id>
-    <userId>12345</userId>
-    <blogs>
-      <blog>
-        <name>oauth-test</name>
-        <url>http://oauth-test.tistory.com</url>
-        <secondaryUrl>http://</secondaryUrl>
-        <nickname>티스토리 테스트</nickname>
-        <title>테스트 블로그 1</title>
-        <description>안녕하세요! 티스토리입니다.</description>
-        <default>Y</default>
-        <blogIconUrl>https://blog_icon_url</blogIconUrl>
-        <faviconUrl>https://favicon_url</faviconUrl>
-        <profileThumbnailImageUrl>https://profile_image</profileThumbnailImageUrl>
-        <profileImageUrl>https://profile_image</profileImageUrl>
-        <role>소유자</role>
-        <blogId>123</blogId>
-        <statistics>
-          <post>182</post>
-          <comment>146</comment>
-          <trackback>0</trackback>
-          <guestbook>39</guestbook>
-          <invitation>0</invitation>
-        </statistics>
-      </blog>
-      ...
-    </blogs>
-  </item>
-</tistory>
-```
-
-### JSON
-
 ```json
 {
   "tistory": {

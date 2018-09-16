@@ -1,12 +1,13 @@
-# 글 작성 API
+# 글 수정 API
 
 블로그에 글을 작성하는 API 입니다.
 
 ```
-POST https://www.tistory.com/apis/post/write?
+POST https://www.tistory.com/apis/post/modify?
   access_token={access-token}
   &output={output-type}
   &blogName={blog-name}
+  &postId={post-id}
   &title={title}
   &content={content}
   &visibility={visibility}
@@ -21,6 +22,7 @@ POST https://www.tistory.com/apis/post/write?
 기본 매개변수를 제외한 매개변수는 다음과 같습니다.
 
 - blogName: Blog Name (필수)
+- postId: 글 번호 (필수)
 - title: 글 제목 (필수)
 - content: 글 내용
 - visibility: 발행상태 (0: 비공개 - 기본값, 1: 보호, 3: 발행)

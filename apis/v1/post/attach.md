@@ -1,15 +1,17 @@
-# 첨부파일 업로드 API
+# 파일 첨부 API
 
 ```
 POST https://www.tistory.com/apis/post/attach?
   access_token={access-token}
   &blogName={blog-name}
+
+[uploadedfile]
 ```
 
 기본 매개변수를 제외한 매개변수는 다음과 같습니다.
 
 - blogName: Blog Name 입니다.
-- uploadedfile: 업로드할 파일
+- uploadedfile: 업로드할 파일 (multipart/form-data)
 
 ## 응답
 

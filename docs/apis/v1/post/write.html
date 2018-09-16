@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>글 목록 · GitBook</title>
+        <title>글 작성 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,8 +57,10 @@
     <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="read.html" />
+    <link rel="next" href="modify.html" />
     
+    
+    <link rel="prev" href="read.html" />
     
 
     </head>
@@ -212,7 +214,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="3.2.2.1" data-path="list.html">
+        <li class="chapter " data-level="3.2.2.1" data-path="list.html">
             
                 <a href="list.html">
             
@@ -238,7 +240,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2.2.3" data-path="write.html">
+        <li class="chapter active" data-level="3.2.2.3" data-path="write.html">
             
                 <a href="write.html">
             
@@ -414,7 +416,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../../.." >글 목록</a>
+        <a href="../../.." >글 작성</a>
     </h1>
 </div>
 
@@ -429,59 +431,45 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#xAE00;-&#xBAA9;&#xB85D;-api">&#xAE00; &#xBAA9;&#xB85D; API</h1>
-<p>&#xBE14;&#xB85C;&#xADF8; &#xAE00; &#xBAA9;&#xB85D;&#xB97C; &#xAC00;&#xC838;&#xC624;&#xB294; API &#xC785;&#xB2C8;&#xB2E4;.</p>
-<pre><code>GET https://www.tistory.com/apis/post/list?
+                                <h1 id="&#xAE00;-&#xC791;&#xC131;-api">&#xAE00; &#xC791;&#xC131; API</h1>
+<p>&#xBE14;&#xB85C;&#xADF8;&#xC5D0; &#xAE00;&#xC744; &#xC791;&#xC131;&#xD558;&#xB294; API &#xC785;&#xB2C8;&#xB2E4;.</p>
+<pre><code>POST https://www.tistory.com/apis/post/write?
   access_token={access-token}
   &amp;output={output-type}
   &amp;blogName={blog-name}
+  &amp;title={title}
+  &amp;content={content}
+  &amp;visibility={visibility}
+  &amp;category={category-id}
+  &amp;published={published}
+  &amp;slogan={slogan}
+  &amp;tag={tag}
+  &amp;acceptComment={acceptComment}
+  &amp;password={password}
 </code></pre><p>&#xAE30;&#xBCF8; &#xB9E4;&#xAC1C;&#xBCC0;&#xC218;&#xB97C; &#xC81C;&#xC678;&#xD55C; &#xB9E4;&#xAC1C;&#xBCC0;&#xC218;&#xB294; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
 <ul>
-<li>blogName: <a href="../../../GLOSSARY.html#blog-name" class="glossary-term" title="&#xBE14;&#xB85C;&#xADF8;&#xB97C; &#xAD6C;&#xBD84;&#xD558;&#xB294; &#xC2DD;&#xBCC4;&#xC790;&#xB85C; &#xC0AC;&#xC6A9;&#xB418;&#xBA70; &#xD2F0;&#xC2A4;&#xD1A0;&#xB9AC; &#xC8FC;&#xC18C; xxx.tistory.com&#xC5D0;&#xC11C; xxx&#xB97C; &#xB098;&#xD0C0;&#xB0C5;&#xB2C8;&#xB2E4;.">Blog Name</a> &#xC785;&#xB2C8;&#xB2E4;.</li>
+<li>blogName: <a href="../../../GLOSSARY.html#blog-name" class="glossary-term" title="&#xBE14;&#xB85C;&#xADF8;&#xB97C; &#xAD6C;&#xBD84;&#xD558;&#xB294; &#xC2DD;&#xBCC4;&#xC790;&#xB85C; &#xC0AC;&#xC6A9;&#xB418;&#xBA70; &#xD2F0;&#xC2A4;&#xD1A0;&#xB9AC; &#xC8FC;&#xC18C; xxx.tistory.com&#xC5D0;&#xC11C; xxx&#xB97C; &#xB098;&#xD0C0;&#xB0C5;&#xB2C8;&#xB2E4;.">Blog Name</a> (&#xD544;&#xC218;)</li>
+<li>title: &#xAE00; &#xC81C;&#xBAA9; (&#xD544;&#xC218;)</li>
+<li>content: &#xAE00; &#xB0B4;&#xC6A9;</li>
+<li>visibility: &#xBC1C;&#xD589;&#xC0C1;&#xD0DC; (0: &#xBE44;&#xACF5;&#xAC1C; - &#xAE30;&#xBCF8;&#xAC12;, 1: &#xBCF4;&#xD638;, 3: &#xBC1C;&#xD589;)</li>
+<li>category: &#xCE74;&#xD14C;&#xACE0;&#xB9AC; &#xC544;&#xC774;&#xB514; (&#xAE30;&#xBCF8;&#xAC12;: 0)</li>
+<li>published: &#xBC1C;&#xD589;&#xC2DC;&#xAC04; (TIMESTAMP &#xC774;&#xBA70; &#xBBF8;&#xB798;&#xC758; &#xC2DC;&#xAC04;&#xC744; &#xB123;&#xC744; &#xACBD;&#xC6B0; &#xC608;&#xC57D;. &#xAE30;&#xBCF8;&#xAC12;: &#xD604;&#xC7AC;&#xC2DC;&#xAC04;)</li>
+<li>slogan: &#xBB38;&#xC790; &#xC8FC;&#xC18C;</li>
+<li>tag: &#xD0DC;&#xADF8; (&apos;,&apos; &#xB85C; &#xAD6C;&#xBD84;)</li>
+<li>acceptComment: &#xB313;&#xAE00; &#xD5C8;&#xC6A9; (0, 1 - &#xAE30;&#xBCF8;&#xAC12;)</li>
+<li>password: &#xBCF4;&#xD638;&#xAE00; &#xBE44;&#xBC00;&#xBC88;&#xD638;</li>
 </ul>
-<h2 id="&#xC751;&#xB2F5;-item">&#xC751;&#xB2F5; item</h2>
+<h2 id="&#xC751;&#xB2F5;">&#xC751;&#xB2F5;</h2>
 <ul>
-<li>url: &#xD2F0;&#xC2A4;&#xD1A0;&#xB9AC; &#xAE30;&#xBCF8; url</li>
-<li>secondaryUrl: &#xB3C5;&#xB9BD;&#xB3C4;&#xBA54;&#xC778; url</li>
-<li>page: &#xD604;&#xC7AC; &#xD398;&#xC774;&#xC9C0;</li>
-<li>count: &#xD398;&#xC774;&#xC9C0;&#xC758; &#xAE00; &#xAC1C;&#xC218;</li>
-<li>totalCount: &#xC804;&#xCCB4; &#xAE00; &#xC218;</li>
-<li>posts: &#xAE00; &#xB9AC;&#xC2A4;&#xD2B8;<ul>
-<li>id: &#xAE00; ID</li>
-<li>title: &#xAE00; &#xC81C;&#xBAA9;</li>
-<li>postUrl: &#xAE00; &#xB300;&#xD45C; &#xC8FC;&#xC18C;</li>
-<li>visibility: &#xAE00; &#xACF5;&#xAC1C; &#xB2E8;&#xACC4; (0: &#xBE44;&#xACF5;&#xAC1C;, 1: &#xBCF4;&#xD638;, 3: &#xBC1C;&#xD589;)</li>
-<li>categoryId: &#xCE74;&#xD14C;&#xACE0;&#xB9AC; ID</li>
-<li>comments: &#xB313;&#xAE00; &#xC218;</li>
-<li>trackbacks: &#xD2B8;&#xB799;&#xBC31; &#xC218;</li>
-<li>date: YYYY-mm-dd HH:MM:SS</li>
+<li>postId: &#xAE00; &#xBC88;&#xD638;</li>
+<li>url: &#xBC1C;&#xD589; &#xC8FC;&#xC18C;</li>
 </ul>
-</li>
-</ul>
-<h2 id="&#xC751;&#xB2F5;&#xAC12;-&#xC608;">&#xC751;&#xB2F5;&#xAC12; &#xC608;</h2>
+<h2 id="&#xC751;&#xB2F5;-&#xC608;">&#xC751;&#xB2F5; &#xC608;</h2>
 <pre><code class="lang-json">{
-  <span class="hljs-string">&quot;tistory&quot;</span>: {
-    <span class="hljs-string">&quot;status&quot;</span>: <span class="hljs-string">&quot;200&quot;</span>,
-    <span class="hljs-string">&quot;item&quot;</span>: {
-      <span class="hljs-string">&quot;url&quot;</span>: <span class="hljs-string">&quot;http://oauth-test.tistory.com&quot;</span>,
-      <span class="hljs-string">&quot;secondaryUrl&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
-      <span class="hljs-string">&quot;page&quot;</span>: <span class="hljs-string">&quot;1&quot;</span>,
-      <span class="hljs-string">&quot;count&quot;</span>: <span class="hljs-string">&quot;10&quot;</span>,
-      <span class="hljs-string">&quot;totalCount&quot;</span>: <span class="hljs-string">&quot;181&quot;</span>,
-      <span class="hljs-string">&quot;posts&quot;</span>: [
-        {
-          <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;201&quot;</span>,
-          <span class="hljs-string">&quot;title&quot;</span>: <span class="hljs-string">&quot;&#xD14C;&#xC2A4;&#xD2B8; &#xC785;&#xB2C8;&#xB2E4;.&quot;</span>,
-          <span class="hljs-string">&quot;postUrl&quot;</span>: <span class="hljs-string">&quot;http://oauth-test.tistory.com/201&quot;</span>,
-          <span class="hljs-string">&quot;visibility&quot;</span>: <span class="hljs-string">&quot;0&quot;</span>,
-          <span class="hljs-string">&quot;categoryId&quot;</span>: <span class="hljs-string">&quot;0&quot;</span>,
-          <span class="hljs-string">&quot;comments&quot;</span>: <span class="hljs-string">&quot;0&quot;</span>,
-          <span class="hljs-string">&quot;trackbacks&quot;</span>: <span class="hljs-string">&quot;0&quot;</span>,
-          <span class="hljs-string">&quot;date&quot;</span>: <span class="hljs-string">&quot;2018-06-01 17:54:28&quot;</span>
-        },
-        ...
-      ]
-    }
+  <span class="hljs-string">&quot;tistory&quot;</span>:{
+    <span class="hljs-string">&quot;status&quot;</span>:<span class="hljs-string">&quot;200&quot;</span>,
+    <span class="hljs-string">&quot;postId&quot;</span>:<span class="hljs-string">&quot;74&quot;</span>,
+    <span class="hljs-string">&quot;url&quot;</span>:<span class="hljs-string">&quot;http://sampleUrl.tistory.com/74&quot;</span>
   }
 }
 </code></pre>
@@ -512,8 +500,12 @@
 
             
                 
+                <a href="read.html" class="navigation navigation-prev " aria-label="Previous page: 글 읽기">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="read.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 글 읽기">
+                
+                <a href="modify.html" class="navigation navigation-next " aria-label="Next page: 글 수정">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -524,7 +516,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"글 목록","level":"3.2.2.1","depth":3,"next":{"title":"글 읽기","level":"3.2.2.2","depth":3,"path":"apis/v1/post/read.md","ref":"apis/v1/post/read.md","articles":[]},"previous":{"title":"글","level":"3.2.2","depth":2,"ref":"","articles":[{"title":"글 목록","level":"3.2.2.1","depth":3,"path":"apis/v1/post/list.md","ref":"apis/v1/post/list.md","articles":[]},{"title":"글 읽기","level":"3.2.2.2","depth":3,"path":"apis/v1/post/read.md","ref":"apis/v1/post/read.md","articles":[]},{"title":"글 작성","level":"3.2.2.3","depth":3,"path":"apis/v1/post/write.md","ref":"apis/v1/post/write.md","articles":[]},{"title":"글 수정","level":"3.2.2.4","depth":3,"path":"apis/v1/post/modify.md","ref":"apis/v1/post/modify.md","articles":[]},{"title":"파일 첨부","level":"3.2.2.5","depth":3,"path":"apis/v1/post/attach.md","ref":"apis/v1/post/attach.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["theme-tistory"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-tistory":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":10,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"apis/v1/post/list.md","mtime":"2018-09-16T07:31:17.778Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-16T11:20:51.827Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"글 작성","level":"3.2.2.3","depth":3,"next":{"title":"글 수정","level":"3.2.2.4","depth":3,"path":"apis/v1/post/modify.md","ref":"apis/v1/post/modify.md","articles":[]},"previous":{"title":"글 읽기","level":"3.2.2.2","depth":3,"path":"apis/v1/post/read.md","ref":"apis/v1/post/read.md","articles":[]},"dir":"ltr"},"config":{"plugins":["theme-tistory"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-tistory":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":10,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"apis/v1/post/write.md","mtime":"2018-09-16T08:05:37.535Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-16T11:20:51.827Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>

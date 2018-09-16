@@ -7,7 +7,6 @@ GET https://www.tistory.com/apis/post/list?
   access_token={access-token}
   &output={output-type}
   &blogName={blog-name}
-  &targetUrl={target-url}
 ```
 
 기본 매개변수를 제외한 매개변수는 다음과 같습니다.
