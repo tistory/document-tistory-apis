@@ -7,11 +7,13 @@ GET https://www.tistory.com/apis/post/list?
   access_token={access-token}
   &output={output-type}
   &blogName={blog-name}
+  &page={page-number}
 ```
 
 기본 매개변수를 제외한 매개변수는 다음과 같습니다.
 
 - blogName: Blog Name 입니다.
+- page: 불러올 페이지 번호입니다.
 
 ## 응답 item
 
