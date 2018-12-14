@@ -17,8 +17,8 @@ GET https://www.tistory.com/apis/category/list?
 
 - id: 카테고리 ID
 - name: 카테고리 이름
-- parent: 부모 카테고리 이름
-- label: 부모 카테고리를 포함한 전체 이름
+- parent: 부모 카테고리 ID
+- label: 부모 카테고리를 포함한 전체 이름 ('/'로 구분)
 - entries: 카테고리내 글 수
 
 ## 응답값 예
@@ -30,25 +30,23 @@ GET https://www.tistory.com/apis/category/list?
     "item":{
       "url":"oauth",
       "secondaryUrl":"",
-      "categories":{
-        "category": [
-          {
-            "id":"403929",
-            "name":"OAuth2.0 Athentication",
-            "parent":"",
-            "label":"OAuth2.0 Athentication",
-            "entries":"0"
-          },
-          {
-            "id":"403930",
-            "name":"Blog API Series",
-            "parent":"",
-            "label":"Blog API Series",
-            "entries":"0"
-          },
-          ...
-        ]
-      }
+      "categories":[
+        {
+          "id":"403929",
+          "name":"OAuth2.0 Athentication",
+          "parent":"",
+          "label":"OAuth2.0 Athentication",
+          "entries":"0"
+        },
+        {
+          "id":"403930",
+          "name":"Blog API Series",
+          "parent":"",
+          "label":"Blog API Series",
+          "entries":"0"
+        },
+        ...
+      ]
     }
   }
 }
