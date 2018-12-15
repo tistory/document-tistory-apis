@@ -9,7 +9,7 @@ Client-side 프로그래밍으로 인증을 구현할 경우 사용하기 적합
 ```
 https://www.tistory.com/oauth/authorize?
   client_id={client-id}
-  &redirect_uri={redirect-url}
+  &redirect_uri={redirect-uri}
   &response_type=token
 ```
 
@@ -41,7 +41,7 @@ http://client.redirect.url#accesss_token={access-token}&expires_in=3600
 사용자가 인증을 완료하면 다음의 URL로 리디렉션됩니다.
 
 ```
-http://{redirect-url}#
+{redirect-uri}#
   accesss_token={access-token}
   &expires_in=3600
 ```

@@ -17,13 +17,13 @@ https://www.tistory.com/oauth/authorize?
 매개변수는 다음과 같습니다.
 
 - client_id: 클라이언트 정보의 Client ID 입니다.
-- redirect_uri: 사용자가 인증 후에 리디렉션할 URL입니다. 클라이언트 정보의 Callback 경로로 등록하여야 하며 등록되지 않은 URL을 사용하는 경우 인증이 거부됩니다.
+- redirect_uri: 사용자가 인증 후에 리디렉션할 URI입니다. 클라이언트 정보의 Callback 경로로 등록하여야 하며 등록되지 않은 URI를 사용하는 경우 인증이 거부됩니다.
 - response_type: Implicit 방식과 구분하기 위해 사용하며 항상 `code`를 사용합니다.
 - state:  [사이트간 요청 위조](https://en.wikipedia.org/wiki/Cross-site_request_forgery) 공격을 보호하기 위한 임의의 고유한 문자열이며 리디렉션시 해당 값이 전달됩니다. (필수아님)
 
 ### 예
 
-인증요청 URL이 다음과 같은 경우
+인증요청 URI가 다음과 같은 경우
 
 ```
 https://www.tistory.com/oauth/authorize?
@@ -41,7 +41,7 @@ http://client.redirect.uri?code=authorizationCode&state=someValue
 
 ## 리디렉션 처리
 
-사용자가 인증을 완료하면 다음의 URL로 리디렉션됩니다.
+사용자가 인증을 완료하면 code와 함께 다음의 URI로 리디렉션됩니다.
 
 ```
 {redirect-uri}?
@@ -57,7 +57,7 @@ http://client.redirect.uri?code=authorizationCode&state=someValue
 
 ### 오류
 
-오류가 발생한 경우 다음의 URL로 리디렉션됩니다.
+오류가 발생한 경우 오류정보와 함께 redirect_uri로 리디렉션됩니다.
 
 ```
 {redirect-uri}?
