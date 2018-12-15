@@ -9,14 +9,14 @@ Client-side 프로그래밍으로 인증을 구현할 경우 사용하기 적합
 ```
 https://www.tistory.com/oauth/authorize?
   client_id={client-id}
-  &redirect_url={redirect-url}
+  &redirect_uri={redirect-url}
   &response_type=token
 ```
 
 매개변수는 다음과 같습니다.
 
 - client_id: 클라이언트 정보의 Client ID 입니다.
-- redirect_url: 사용자가 인증 후에 리디렉션할 URL입니다. 클라이언트 정보의 Callback 경로로 등록하여야 하며 등록되지 않은 URL을 사용하는 경우 인증이 거부됩니다.
+- redirect_uri: 사용자가 인증 후에 리디렉션할 URL입니다. 클라이언트 정보의 Callback 경로로 등록하여야 하며 등록되지 않은 URL을 사용하는 경우 인증이 거부됩니다.
 - response_type: Authorization code 방식과 구분하기 위해 사용하며 항상 `token`를 사용합니다.
 
 ### 예

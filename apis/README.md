@@ -21,7 +21,7 @@ https://www.tistory.com/apis/category/list?
   access_token=abcdefghijklmnopqrstuvwxyz
 ```
 
-글 리스트 2페이지를 json으로 가져올 때
+두번째 페이지의 글 리스트를 json으로 가져올 때
 ```
 https://www.tistory.com/apis/post/list?
   access_token=abcdefghijklmnopqrstuvwxyz
