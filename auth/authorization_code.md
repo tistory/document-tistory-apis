@@ -9,7 +9,7 @@ Server-side 프로그래밍으로 인증을 구현할 경우 사용하기 적합
 ```
 https://www.tistory.com/oauth/authorize?
   client_id={client-id}
-  &redirect_uri={redirect-url}
+  &redirect_uri={redirect-uri}
   &response_type=code
   &state={state-param}
 ```
@@ -28,7 +28,7 @@ https://www.tistory.com/oauth/authorize?
 ```
 https://www.tistory.com/oauth/authorize?
   client_id=abcdefghijklmnopqrstuvwxyz
-  &redirect_uri=http://client.redirect.url
+  &redirect_uri=http://client.redirect.uri
   &response_type=code
   &state=someValue
 ```
@@ -36,7 +36,7 @@ https://www.tistory.com/oauth/authorize?
 인증 완료후 다음과 같이 리디렉션됩니다.
 
 ```
-http://client.redirect.url?code=authorizationCode&state=someValue
+http://client.redirect.uri?code=authorizationCode&state=someValue
 ```
 
 ## 리디렉션 처리
@@ -44,7 +44,7 @@ http://client.redirect.url?code=authorizationCode&state=someValue
 사용자가 인증을 완료하면 다음의 URL로 리디렉션됩니다.
 
 ```
-https://{redirect-url}?
+{redirect-uri}?
   code={authorization-code}
   &state={state-param}
 ```
@@ -60,7 +60,7 @@ https://{redirect-url}?
 오류가 발생한 경우 다음의 URL로 리디렉션됩니다.
 
 ```
-https://{redirect-url}?
+{redirect-uri}?
   error={error}
   &error_reason={error-reason}
   &state={state-param}
@@ -80,7 +80,7 @@ https://{redirect-url}?
 GET https://www.tistory.com/oauth/access_token?
   client_id={client-id}
   &client_secret={client-secret}
-  &redirect_uri={redirect-url}
+  &redirect_uri={redirect-uri}
   &code={code}
   &grant_type=authorization_code
 ```
