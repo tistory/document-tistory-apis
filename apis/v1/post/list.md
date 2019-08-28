@@ -26,7 +26,7 @@ GET https://www.tistory.com/apis/post/list?
   - id: 글 ID
   - title: 글 제목
   - postUrl: 글 대표 주소
-  - visibility: 글 공개 단계 (0: 비공개, 1: 보호, 3: 발행)
+  - visibility: 글 공개 단계 (0: 비공개, 15: 보호, 20: 발행)
   - categoryId: 카테고리 ID
   - comments: 댓글 수
   - trackbacks: 트랙백 수
