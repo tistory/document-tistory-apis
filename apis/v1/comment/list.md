@@ -37,40 +37,38 @@ GET https://www.tistory.com/apis/comment/list?
       "secondaryUrl": "",
       "postId": "4",
       "totalCount": "3",
-      "comments": {
-        "comment": [
-          {
-            "id": "8176918",
-            "date": "1303796711",
-            "name": "지나다가",
-            "parentId": "",
-            "homepage": "http://someurl.com",
-            "visibility": "2",
-            "comment": "좋은 글 감사합니다.",
-            "open": "Y"
-          },
-          {
-            "id": "8176923",
-            "date": "1303796801",
-            "name": "글쎄요",
-            "parentId": "",
-            "homepage": "http://shesgone.com",
-            "visibility": "2",
-            "comment": " 제 홈에 와서 구경해보세요^_^",
-            "open": "N"
-          },
-          {
-            "id": "8176926",
-            "date": "1303796900",
-            "name": "Tistory API",
-            "parentId": "8176918",
-            "homepage": "http://oauth.tistory.com",
-            "visibility": "2",
-            "comment": "비루한 글에 칭찬을 하시니 몸둘바를 모르.. 지 않아!",
-            "open": "Y"
-          }
-        ]
-      }
+      "comments": [
+        {
+          "id": "8176918",
+          "date": "1303796711",
+          "name": "지나다가",
+          "parentId": "",
+          "homepage": "http://someurl.com",
+          "visibility": "2",
+          "comment": "좋은 글 감사합니다.",
+          "open": "Y"
+        },
+        {
+          "id": "8176923",
+          "date": "1303796801",
+          "name": "글쎄요",
+          "parentId": "",
+          "homepage": "http://shesgone.com",
+          "visibility": "2",
+          "comment": " 제 홈에 와서 구경해보세요^_^",
+          "open": "N"
+        },
+        {
+          "id": "8176926",
+          "date": "1303796900",
+          "name": "Tistory API",
+          "parentId": "8176918",
+          "homepage": "http://oauth.tistory.com",
+          "visibility": "2",
+          "comment": "비루한 글에 칭찬을 하시니 몸둘바를 모르.. 지 않아!",
+          "open": "Y"
+        }
+      ]
     }
   }
 }
