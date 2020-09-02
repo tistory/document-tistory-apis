@@ -18,7 +18,7 @@ https://www.tistory.com/oauth/authorize?
 
 - client_id: 클라이언트 정보의 Client ID 입니다.
 - redirect_uri: 사용자가 인증 후에 리디렉션할 URI입니다. 클라이언트 정보의 Callback 경로로 등록하여야 하며 등록되지 않은 URI를 사용하는 경우 인증이 거부됩니다.
-- response_type: Implicit 방식과 구분하기 위해 사용하며 항상 `code`를 사용합니다.
+- response_type: 항상 `code`를 사용합니다.
 - state:  [사이트간 요청 위조](https://en.wikipedia.org/wiki/Cross-site_request_forgery) 공격을 보호하기 위한 임의의 고유한 문자열이며 리디렉션시 해당 값이 전달됩니다. (필수아님)
 
 ### 예
@@ -91,7 +91,7 @@ GET https://www.tistory.com/oauth/access_token?
 - client_secret: 클라이언트 정보의 Secret Key 입니다. 이 정보는 티스토리와 Client만이 공유해야하며 절대 외부에 공개되면 안됩니다.
 - redirect_uri: 인증요청시 사용한 리디렉션 URL로 요청검증을 위해 사용합니다.
 - code: 리디렉션으로 전달받은 code를 그대로 사용합니다.
-- grant_type: Implicit 방식과 구분하기 위해 사용하며 항상 `authorization_code`를 사용합니다.
+- grant_type: 항상 `authorization_code`를 사용합니다.
 
 발급요청이 성공한 경우 HTTP 200 응답과 함께 Access Token이 응답값으로 옵니다.
 
