@@ -5,12 +5,14 @@ GET https://www.tistory.com/apis/post/read?
   access_token={access-token}
   &blogName={blog-name}
   &postId={post-id}
+  &output={output}
 ```
 
 기본 매개변수를 제외한 매개변수는 다음과 같습니다.
 
 - blogName: Blog Name 입니다.
 - postId: 글 ID
+- output: 데이터 반환 형식(json, xml)
 
 ## 응답 item
 
