@@ -2,5 +2,4 @@
 
 - 일정: 2024년 2월까지 순차 종료
 - 파일 첨부 > 글 관련 기능 > 댓글 관련 기능 > 그 외 기능 순으로 종료
-
-상세 공지 링크 : https://notice.tistory.com/2664
+- 상세 공지 링크 : https://notice.tistory.com/2664
