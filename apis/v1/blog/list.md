@@ -1,3 +1,5 @@
+`공지` 아래 API는 종료되었습니다. [link](https://notice.tistory.com/2664)
+
 # 블로그 정보 API
 
 자신의 블로그 정보를 가져오는 API 입니다.

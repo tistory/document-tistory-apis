@@ -1,3 +1,5 @@
+`공지` 아래 API는 종료되었습니다. [link](https://notice.tistory.com/2664)
+
 # 파일 첨부 API
 
 ```

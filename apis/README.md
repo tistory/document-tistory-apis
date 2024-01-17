@@ -1,3 +1,5 @@
+`공지` 아래 API는 종료되었습니다. [link](https://notice.tistory.com/2664)
+
 # Open API 소개
 
 티스토리 Open API는 다음과 같은 형태의 URL로 제공됩니다.

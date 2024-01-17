@@ -1,3 +1,5 @@
+`공지` 아래 API는 종료되었습니다. [link](https://notice.tistory.com/2664)
+
 # 게시글 댓글 목록 API
 
 게시글 댓글 목록을 가져오는 API 입니다.

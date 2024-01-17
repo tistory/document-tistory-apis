@@ -1,3 +1,5 @@
+`공지` 아래 API는 종료되었습니다. [link](https://notice.tistory.com/2664)
+
 # 글 읽기 API
 
 ```

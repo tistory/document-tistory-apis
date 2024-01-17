@@ -1,3 +1,5 @@
+`공지` 아래 API는 종료되었습니다. [link](https://notice.tistory.com/2664)
+
 # 댓글 작성 API
 
 게시글에 댓글/대댓글을 작성하는 API 입니다.

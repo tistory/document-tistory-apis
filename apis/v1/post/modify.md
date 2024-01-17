@@ -1,3 +1,5 @@
+`공지` 아래 API는 종료되었습니다. [link](https://notice.tistory.com/2664)
+
 # 글 수정 API
 
 블로그에 글을 작성하는 API 입니다.

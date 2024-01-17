@@ -1,3 +1,5 @@
+`공지` 아래 API는 종료되었습니다. [link](https://notice.tistory.com/2664)
+
 # 글 목록 API
 
 블로그 글 목록를 가져오는 API 입니다.

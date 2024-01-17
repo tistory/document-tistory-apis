@@ -1,3 +1,5 @@
+`공지` 아래 API는 종료되었습니다. [link](https://notice.tistory.com/2664)
+
 # Authentication Code 방식
 
 Server-side 프로그래밍으로 인증을 구현할 경우 사용하기 적합한 인증 방식입니다.
